@@ -1,0 +1,9 @@
+#!/bin/bash
+
+xset s off
+xset -dpms
+
+xrdb -merge ~/.Xresources
+source ~/.screenlayout/main.sh
+picom -bcf -i 0.8 -e 0.8 --no-fading-openclose --backend glx --vsync
+
